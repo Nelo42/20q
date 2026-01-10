@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Claude Code settings
+.claude/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+
+# Learned data (game state)
+twenty_questions/data/learned.json

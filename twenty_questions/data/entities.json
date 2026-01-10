@@ -1,0 +1,4273 @@
+{
+  "entities": [
+    {
+      "id": "dog",
+      "name": "a dog",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 0.95,
+        "has_four_legs": 1.0,
+        "has_tail": 0.95,
+        "is_domesticated": 0.95,
+        "is_pet": 0.9,
+        "makes_noise": 0.9,
+        "is_intelligent": 0.7
+      }
+    },
+    {
+      "id": "cat",
+      "name": "a cat",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 0.95,
+        "has_four_legs": 1.0,
+        "has_tail": 0.95,
+        "is_domesticated": 0.9,
+        "is_pet": 0.9,
+        "is_predator": 0.7,
+        "is_nocturnal": 0.6,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "hamster",
+      "name": "a hamster",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 0.9,
+        "is_pet": 0.9,
+        "is_nocturnal": 0.8
+      }
+    },
+    {
+      "id": "guinea_pig",
+      "name": "a guinea pig",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.9,
+        "is_pet": 0.9,
+        "is_herbivore": 1.0,
+        "makes_noise": 0.7
+      }
+    },
+    {
+      "id": "rabbit",
+      "name": "a rabbit",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_small": 0.8,
+        "is_herbivore": 1.0,
+        "is_pet": 0.6,
+        "can_jump": 1.0
+      }
+    },
+    {
+      "id": "ferret",
+      "name": "a ferret",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.8,
+        "is_pet": 0.7,
+        "is_carnivore": 0.9,
+        "is_long": 0.8
+      }
+    },
+    {
+      "id": "gerbil",
+      "name": "a gerbil",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_tiny": 1.0,
+        "is_pet": 0.8,
+        "has_tail": 1.0
+      }
+    },
+    {
+      "id": "horse",
+      "name": "a horse",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_equine": 1.0,
+        "has_fur": 0.9,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_large": 0.9,
+        "is_domesticated": 0.9,
+        "is_farm_animal": 0.8,
+        "has_hooves": 1.0,
+        "is_fast": 0.9,
+        "is_strong": 0.8,
+        "is_herbivore": 1.0
+      }
+    },
+    {
+      "id": "cow",
+      "name": "a cow",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_bovine": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.8,
+        "is_domesticated": 1.0,
+        "is_farm_animal": 1.0,
+        "is_herbivore": 1.0,
+        "has_hooves": 1.0,
+        "has_horns": 0.6,
+        "is_food": 0.8
+      }
+    },
+    {
+      "id": "pig",
+      "name": "a pig",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_domesticated": 0.9,
+        "is_farm_animal": 1.0,
+        "is_omnivore": 1.0,
+        "is_intelligent": 0.7,
+        "is_food": 0.7
+      }
+    },
+    {
+      "id": "sheep",
+      "name": "a sheep",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_domesticated": 1.0,
+        "is_farm_animal": 1.0,
+        "is_herbivore": 1.0,
+        "has_hooves": 1.0,
+        "lives_in_groups": 0.9
+      }
+    },
+    {
+      "id": "goat",
+      "name": "a goat",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_domesticated": 0.9,
+        "is_farm_animal": 0.9,
+        "is_herbivore": 1.0,
+        "has_hooves": 1.0,
+        "has_horns": 0.8,
+        "can_climb": 0.8
+      }
+    },
+    {
+      "id": "donkey",
+      "name": "a donkey",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_equine": 1.0,
+        "has_four_legs": 1.0,
+        "is_domesticated": 0.9,
+        "is_farm_animal": 0.8,
+        "has_hooves": 1.0,
+        "is_herbivore": 1.0,
+        "makes_noise": 0.8
+      }
+    },
+    {
+      "id": "llama",
+      "name": "a llama",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.7,
+        "is_domesticated": 0.8,
+        "is_herbivore": 1.0,
+        "has_long_neck": 0.7,
+        "lives_in_americas": 0.9
+      }
+    },
+    {
+      "id": "alpaca",
+      "name": "an alpaca",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_domesticated": 0.9,
+        "is_herbivore": 1.0,
+        "lives_in_americas": 0.9
+      }
+    },
+    {
+      "id": "lion",
+      "name": "a lion",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_africa": 0.9,
+        "lives_in_groups": 0.8,
+        "makes_noise": 1.0,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "tiger",
+      "name": "a tiger",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "has_stripes": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_asia": 0.9,
+        "is_solitary": 0.8,
+        "is_endangered": 0.8,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "leopard",
+      "name": "a leopard",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "has_spots": 1.0,
+        "can_climb": 1.0,
+        "is_solitary": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "cheetah",
+      "name": "a cheetah",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "has_spots": 1.0,
+        "is_fast": 1.0,
+        "lives_in_africa": 0.9,
+        "is_endangered": 0.7,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "jaguar",
+      "name": "a jaguar",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "has_spots": 1.0,
+        "can_swim": 0.8,
+        "lives_in_americas": 0.9,
+        "lives_in_jungle": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "cougar",
+      "name": "a cougar",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "lives_in_americas": 1.0,
+        "is_solitary": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "lynx",
+      "name": "a lynx",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_solitary": 0.9,
+        "lives_in_arctic": 0.5,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "snow_leopard",
+      "name": "a snow leopard",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_feline": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "has_spots": 1.0,
+        "lives_in_mountains": 1.0,
+        "lives_in_asia": 1.0,
+        "is_endangered": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "wolf",
+      "name": "a wolf",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "lives_in_groups": 1.0,
+        "makes_noise": 0.9,
+        "is_wild": 1.0,
+        "has_claws": 0.8
+      }
+    },
+    {
+      "id": "fox",
+      "name": "a fox",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 0.8,
+        "is_predator": 0.7,
+        "is_solitary": 0.7,
+        "is_nocturnal": 0.6,
+        "is_wild": 1.0
+      }
+    },
+    {
+      "id": "coyote",
+      "name": "a coyote",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 0.8,
+        "is_predator": 0.8,
+        "lives_in_americas": 1.0,
+        "makes_noise": 0.9,
+        "is_wild": 1.0
+      }
+    },
+    {
+      "id": "hyena",
+      "name": "a hyena",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 0.9,
+        "lives_in_africa": 0.9,
+        "lives_in_groups": 0.9,
+        "makes_noise": 0.9,
+        "is_nocturnal": 0.6
+      }
+    },
+    {
+      "id": "dingo",
+      "name": "a dingo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 0.9,
+        "is_predator": 0.8,
+        "lives_in_australia": 1.0,
+        "is_wild": 1.0
+      }
+    },
+    {
+      "id": "jackal",
+      "name": "a jackal",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_canine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_carnivore": 0.8,
+        "lives_in_africa": 0.8,
+        "is_wild": 1.0
+      }
+    },
+    {
+      "id": "bear",
+      "name": "a bear",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "is_omnivore": 0.8,
+        "is_strong": 1.0,
+        "is_dangerous": 0.9,
+        "has_claws": 1.0,
+        "hibernates": 0.8
+      }
+    },
+    {
+      "id": "polar_bear",
+      "name": "a polar bear",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "lives_in_arctic": 1.0,
+        "is_white": 1.0,
+        "can_swim": 0.9,
+        "is_dangerous": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "grizzly_bear",
+      "name": "a grizzly bear",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "is_omnivore": 1.0,
+        "is_strong": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_americas": 0.9,
+        "hibernates": 0.9,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "panda",
+      "name": "a panda",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.8,
+        "is_herbivore": 0.95,
+        "is_endangered": 0.9,
+        "lives_in_asia": 1.0,
+        "is_black": 0.5,
+        "is_white": 0.5
+      }
+    },
+    {
+      "id": "koala",
+      "name": "a koala",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "lives_in_australia": 1.0,
+        "lives_in_trees": 1.0,
+        "is_herbivore": 1.0,
+        "is_small": 0.7
+      }
+    },
+    {
+      "id": "monkey",
+      "name": "a monkey",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "has_tail": 0.9,
+        "lives_in_trees": 0.9,
+        "is_intelligent": 0.8,
+        "lives_in_groups": 0.9,
+        "is_omnivore": 0.8
+      }
+    },
+    {
+      "id": "gorilla",
+      "name": "a gorilla",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "is_large": 0.9,
+        "is_strong": 1.0,
+        "lives_in_jungle": 0.9,
+        "lives_in_africa": 1.0,
+        "is_endangered": 0.8,
+        "is_intelligent": 0.9,
+        "is_herbivore": 0.9
+      }
+    },
+    {
+      "id": "chimpanzee",
+      "name": "a chimpanzee",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "lives_in_africa": 1.0,
+        "is_intelligent": 0.95,
+        "lives_in_groups": 0.9,
+        "is_omnivore": 0.9
+      }
+    },
+    {
+      "id": "orangutan",
+      "name": "an orangutan",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "is_large": 0.8,
+        "lives_in_trees": 1.0,
+        "lives_in_asia": 1.0,
+        "is_intelligent": 0.9,
+        "is_endangered": 0.9,
+        "is_orange": 0.9
+      }
+    },
+    {
+      "id": "baboon",
+      "name": "a baboon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "lives_in_africa": 1.0,
+        "lives_in_groups": 1.0,
+        "is_omnivore": 0.9,
+        "is_aggressive": 0.7
+      }
+    },
+    {
+      "id": "lemur",
+      "name": "a lemur",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "has_tail": 1.0,
+        "lives_in_trees": 0.9,
+        "is_endangered": 0.7
+      }
+    },
+    {
+      "id": "gibbon",
+      "name": "a gibbon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_primate": 1.0,
+        "has_fur": 1.0,
+        "lives_in_trees": 1.0,
+        "lives_in_asia": 1.0,
+        "makes_noise": 0.9,
+        "can_climb": 1.0
+      }
+    },
+    {
+      "id": "elephant",
+      "name": "an elephant",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "is_huge": 1.0,
+        "has_trunk": 1.0,
+        "has_tusks": 0.8,
+        "is_herbivore": 1.0,
+        "is_strong": 1.0,
+        "is_intelligent": 0.9,
+        "lives_in_africa": 0.7,
+        "lives_in_asia": 0.3,
+        "lives_in_groups": 0.9
+      }
+    },
+    {
+      "id": "giraffe",
+      "name": "a giraffe",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "has_long_neck": 1.0,
+        "has_spots": 1.0,
+        "is_herbivore": 1.0,
+        "lives_in_africa": 1.0,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "zebra",
+      "name": "a zebra",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_equine": 1.0,
+        "has_four_legs": 1.0,
+        "has_stripes": 1.0,
+        "is_herbivore": 1.0,
+        "lives_in_africa": 1.0,
+        "has_hooves": 1.0,
+        "lives_in_groups": 0.9
+      }
+    },
+    {
+      "id": "hippo",
+      "name": "a hippopotamus",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "lives_in_water": 0.8,
+        "is_herbivore": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_africa": 1.0,
+        "is_aggressive": 0.8
+      }
+    },
+    {
+      "id": "rhino",
+      "name": "a rhinoceros",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "has_horns": 1.0,
+        "is_herbivore": 1.0,
+        "is_dangerous": 0.8,
+        "is_endangered": 0.9,
+        "is_strong": 0.9
+      }
+    },
+    {
+      "id": "buffalo",
+      "name": "a buffalo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_bovine": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "has_horns": 1.0,
+        "is_herbivore": 1.0,
+        "is_dangerous": 0.7,
+        "lives_in_groups": 0.9,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "bison",
+      "name": "a bison",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_bovine": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "has_horns": 1.0,
+        "is_herbivore": 1.0,
+        "lives_in_americas": 0.9,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "moose",
+      "name": "a moose",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 1.0,
+        "has_horns": 0.8,
+        "is_herbivore": 1.0,
+        "lives_in_arctic": 0.5,
+        "has_hooves": 1.0,
+        "is_solitary": 0.7
+      }
+    },
+    {
+      "id": "deer",
+      "name": "a deer",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "has_horns": 0.6,
+        "is_herbivore": 1.0,
+        "is_fast": 0.9,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "elk",
+      "name": "an elk",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.8,
+        "has_horns": 0.8,
+        "is_herbivore": 1.0,
+        "has_hooves": 1.0,
+        "lives_in_americas": 0.8
+      }
+    },
+    {
+      "id": "reindeer",
+      "name": "a reindeer",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "has_horns": 0.9,
+        "is_herbivore": 1.0,
+        "lives_in_arctic": 1.0,
+        "has_hooves": 1.0,
+        "is_domesticated": 0.5
+      }
+    },
+    {
+      "id": "antelope",
+      "name": "an antelope",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "has_horns": 0.9,
+        "is_herbivore": 1.0,
+        "is_fast": 0.9,
+        "lives_in_africa": 0.8,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "gazelle",
+      "name": "a gazelle",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "has_horns": 0.8,
+        "is_herbivore": 1.0,
+        "is_fast": 1.0,
+        "lives_in_africa": 0.9,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "camel",
+      "name": "a camel",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "is_domesticated": 0.8,
+        "lives_in_desert": 1.0,
+        "is_herbivore": 1.0,
+        "has_hooves": 1.0
+      }
+    },
+    {
+      "id": "whale",
+      "name": "a whale",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_cetacean": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_large": 1.0,
+        "is_huge": 1.0,
+        "can_swim": 1.0,
+        "has_no_legs": 1.0,
+        "has_fins": 1.0
+      }
+    },
+    {
+      "id": "dolphin",
+      "name": "a dolphin",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_cetacean": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 0.9,
+        "can_swim": 1.0,
+        "is_intelligent": 0.95,
+        "lives_in_groups": 0.9,
+        "has_no_legs": 1.0,
+        "has_fins": 1.0,
+        "makes_noise": 0.9
+      }
+    },
+    {
+      "id": "orca",
+      "name": "an orca",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_cetacean": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_large": 0.9,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_intelligent": 0.9,
+        "is_black": 0.5,
+        "is_white": 0.5,
+        "has_fins": 1.0
+      }
+    },
+    {
+      "id": "seal",
+      "name": "a seal",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "lives_in_water": 0.9,
+        "lives_in_ocean": 0.9,
+        "can_swim": 1.0,
+        "is_carnivore": 1.0,
+        "eats_fish": 1.0,
+        "has_fins": 0.8
+      }
+    },
+    {
+      "id": "sea_lion",
+      "name": "a sea lion",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "lives_in_water": 0.8,
+        "lives_in_ocean": 0.9,
+        "can_swim": 1.0,
+        "is_carnivore": 1.0,
+        "eats_fish": 1.0,
+        "makes_noise": 0.8
+      }
+    },
+    {
+      "id": "walrus",
+      "name": "a walrus",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "lives_in_water": 0.7,
+        "lives_in_ocean": 0.9,
+        "is_large": 0.9,
+        "has_tusks": 1.0,
+        "lives_in_arctic": 1.0,
+        "can_swim": 1.0
+      }
+    },
+    {
+      "id": "manatee",
+      "name": "a manatee",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "lives_in_water": 1.0,
+        "is_large": 0.8,
+        "is_herbivore": 1.0,
+        "can_swim": 1.0,
+        "has_fins": 0.8
+      }
+    },
+    {
+      "id": "otter",
+      "name": "an otter",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "lives_in_water": 0.8,
+        "can_swim": 1.0,
+        "is_carnivore": 0.9,
+        "eats_fish": 0.9,
+        "is_small": 0.6
+      }
+    },
+    {
+      "id": "mouse",
+      "name": "a mouse",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "has_tail": 1.0,
+        "is_nocturnal": 0.7
+      }
+    },
+    {
+      "id": "rat",
+      "name": "a rat",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.9,
+        "has_tail": 1.0,
+        "is_nocturnal": 0.7,
+        "is_intelligent": 0.6
+      }
+    },
+    {
+      "id": "squirrel",
+      "name": "a squirrel",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.9,
+        "has_tail": 1.0,
+        "lives_in_trees": 0.9,
+        "is_herbivore": 0.8,
+        "can_climb": 1.0
+      }
+    },
+    {
+      "id": "chipmunk",
+      "name": "a chipmunk",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "is_small": 1.0,
+        "has_stripes": 1.0,
+        "lives_in_americas": 0.9,
+        "can_climb": 0.8
+      }
+    },
+    {
+      "id": "beaver",
+      "name": "a beaver",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "has_fur": 1.0,
+        "has_tail": 1.0,
+        "lives_in_water": 0.7,
+        "lives_in_freshwater": 0.9,
+        "can_swim": 1.0,
+        "is_herbivore": 1.0
+      }
+    },
+    {
+      "id": "porcupine",
+      "name": "a porcupine",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_rodent": 1.0,
+        "is_small": 0.7,
+        "is_dangerous": 0.5,
+        "is_nocturnal": 0.7,
+        "is_herbivore": 1.0
+      }
+    },
+    {
+      "id": "hedgehog",
+      "name": "a hedgehog",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_small": 1.0,
+        "is_nocturnal": 0.8,
+        "eats_insects": 0.8,
+        "is_pet": 0.4
+      }
+    },
+    {
+      "id": "mole",
+      "name": "a mole",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_small": 1.0,
+        "lives_underground": 1.0,
+        "can_burrow": 1.0,
+        "eats_insects": 0.9
+      }
+    },
+    {
+      "id": "badger",
+      "name": "a badger",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "lives_underground": 0.8,
+        "can_burrow": 1.0,
+        "is_omnivore": 0.9,
+        "is_nocturnal": 0.7,
+        "has_stripes": 0.7
+      }
+    },
+    {
+      "id": "skunk",
+      "name": "a skunk",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.8,
+        "has_stripes": 1.0,
+        "is_nocturnal": 0.8,
+        "is_omnivore": 0.9,
+        "lives_in_americas": 1.0
+      }
+    },
+    {
+      "id": "raccoon",
+      "name": "a raccoon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.7,
+        "is_nocturnal": 1.0,
+        "is_omnivore": 1.0,
+        "is_intelligent": 0.7,
+        "lives_in_americas": 1.0,
+        "can_climb": 0.8
+      }
+    },
+    {
+      "id": "opossum",
+      "name": "an opossum",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "is_nocturnal": 1.0,
+        "is_omnivore": 1.0,
+        "lives_in_americas": 1.0,
+        "has_tail": 1.0
+      }
+    },
+    {
+      "id": "weasel",
+      "name": "a weasel",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "is_small": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 0.9,
+        "is_long": 0.8
+      }
+    },
+    {
+      "id": "mongoose",
+      "name": "a mongoose",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "is_small": 0.8,
+        "is_carnivore": 0.9,
+        "is_predator": 0.8,
+        "is_fast": 0.8
+      }
+    },
+    {
+      "id": "kangaroo",
+      "name": "a kangaroo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "has_two_legs": 0.8,
+        "has_tail": 1.0,
+        "is_large": 0.7,
+        "lives_in_australia": 1.0,
+        "is_herbivore": 1.0,
+        "can_jump": 1.0
+      }
+    },
+    {
+      "id": "wallaby",
+      "name": "a wallaby",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "has_tail": 1.0,
+        "lives_in_australia": 1.0,
+        "is_herbivore": 1.0,
+        "can_jump": 1.0,
+        "is_small": 0.6
+      }
+    },
+    {
+      "id": "wombat",
+      "name": "a wombat",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "lives_in_australia": 1.0,
+        "lives_underground": 0.8,
+        "can_burrow": 1.0,
+        "is_herbivore": 1.0,
+        "is_nocturnal": 0.7
+      }
+    },
+    {
+      "id": "tasmanian_devil",
+      "name": "a Tasmanian devil",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "is_marsupial": 1.0,
+        "has_fur": 1.0,
+        "has_pouch": 1.0,
+        "lives_in_australia": 1.0,
+        "is_carnivore": 1.0,
+        "is_aggressive": 0.8,
+        "makes_noise": 0.9,
+        "is_endangered": 0.8
+      }
+    },
+    {
+      "id": "bat",
+      "name": "a bat",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 0.9,
+        "is_nocturnal": 1.0,
+        "eats_insects": 0.7,
+        "lives_in_groups": 0.8
+      }
+    },
+    {
+      "id": "sloth",
+      "name": "a sloth",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "lives_in_trees": 1.0,
+        "lives_in_jungle": 1.0,
+        "lives_in_americas": 1.0,
+        "is_herbivore": 0.9,
+        "is_solitary": 0.8,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "armadillo",
+      "name": "an armadillo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_shell": 0.9,
+        "has_four_legs": 1.0,
+        "lives_underground": 0.6,
+        "can_burrow": 0.9,
+        "eats_insects": 0.8,
+        "lives_in_americas": 1.0
+      }
+    },
+    {
+      "id": "anteater",
+      "name": "an anteater",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "eats_insects": 1.0,
+        "has_long_neck": 0.3,
+        "lives_in_americas": 1.0,
+        "has_claws": 1.0
+      }
+    },
+    {
+      "id": "platypus",
+      "name": "a platypus",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_fur": 1.0,
+        "has_four_legs": 1.0,
+        "lives_in_australia": 1.0,
+        "lives_in_water": 0.7,
+        "can_swim": 1.0,
+        "lays_eggs": 1.0,
+        "is_venomous": 0.8,
+        "has_beak": 0.9
+      }
+    },
+    {
+      "id": "aardvark",
+      "name": "an aardvark",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mammal": 1.0,
+        "has_four_legs": 1.0,
+        "eats_insects": 1.0,
+        "lives_in_africa": 1.0,
+        "is_nocturnal": 1.0,
+        "can_burrow": 1.0
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "an eagle",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "has_two_legs": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "has_claws": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "hawk",
+      "name": "a hawk",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "has_claws": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "falcon",
+      "name": "a falcon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_fast": 1.0,
+        "has_claws": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "owl",
+      "name": "an owl",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_nocturnal": 1.0,
+        "has_claws": 1.0,
+        "lays_eggs": 1.0,
+        "makes_noise": 0.8
+      }
+    },
+    {
+      "id": "vulture",
+      "name": "a vulture",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_carnivore": 1.0,
+        "is_large": 0.6,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "penguin",
+      "name": "a penguin",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.0,
+        "has_beak": 1.0,
+        "can_swim": 1.0,
+        "lives_in_arctic": 0.7,
+        "lives_in_groups": 0.9,
+        "lays_eggs": 1.0,
+        "is_black": 0.5,
+        "is_white": 0.5
+      }
+    },
+    {
+      "id": "ostrich",
+      "name": "an ostrich",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.0,
+        "has_beak": 1.0,
+        "has_two_legs": 1.0,
+        "is_large": 1.0,
+        "is_fast": 1.0,
+        "lives_in_africa": 0.9,
+        "lays_eggs": 1.0,
+        "has_long_neck": 0.8
+      }
+    },
+    {
+      "id": "emu",
+      "name": "an emu",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.0,
+        "has_beak": 1.0,
+        "is_large": 0.9,
+        "lives_in_australia": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "parrot",
+      "name": "a parrot",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_pet": 0.7,
+        "is_colorful": 1.0,
+        "makes_noise": 1.0,
+        "is_intelligent": 0.8,
+        "lives_in_jungle": 0.6,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "cockatoo",
+      "name": "a cockatoo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_pet": 0.6,
+        "is_white": 0.7,
+        "makes_noise": 1.0,
+        "lives_in_australia": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "toucan",
+      "name": "a toucan",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_colorful": 1.0,
+        "lives_in_jungle": 1.0,
+        "lives_in_americas": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "peacock",
+      "name": "a peacock",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.4,
+        "has_beak": 1.0,
+        "has_tail": 1.0,
+        "is_colorful": 1.0,
+        "makes_noise": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "flamingo",
+      "name": "a flamingo",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.9,
+        "has_beak": 1.0,
+        "has_long_neck": 0.8,
+        "lives_in_water": 0.6,
+        "lives_in_groups": 0.9,
+        "is_pink": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "swan",
+      "name": "a swan",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.9,
+        "has_beak": 1.0,
+        "can_swim": 1.0,
+        "has_long_neck": 0.9,
+        "is_white": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "duck",
+      "name": "a duck",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.8,
+        "has_beak": 1.0,
+        "can_swim": 1.0,
+        "is_farm_animal": 0.6,
+        "makes_noise": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "goose",
+      "name": "a goose",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.9,
+        "has_beak": 1.0,
+        "can_swim": 0.9,
+        "is_farm_animal": 0.5,
+        "is_aggressive": 0.6,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "chicken",
+      "name": "a chicken",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.2,
+        "has_beak": 1.0,
+        "is_domesticated": 1.0,
+        "is_farm_animal": 1.0,
+        "makes_noise": 0.8,
+        "lays_eggs": 1.0,
+        "is_food": 0.9
+      }
+    },
+    {
+      "id": "turkey",
+      "name": "a turkey",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 0.3,
+        "has_beak": 1.0,
+        "is_farm_animal": 0.8,
+        "is_food": 0.8,
+        "makes_noise": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "crow",
+      "name": "a crow",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_intelligent": 0.9,
+        "is_black": 1.0,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "raven",
+      "name": "a raven",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_intelligent": 0.9,
+        "is_black": 1.0,
+        "is_large": 0.4,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "pigeon",
+      "name": "a pigeon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "lives_in_groups": 0.8,
+        "makes_noise": 0.7,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "sparrow",
+      "name": "a sparrow",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 0.8,
+        "makes_noise": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "robin",
+      "name": "a robin",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_small": 1.0,
+        "is_red": 0.5,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "hummingbird",
+      "name": "a hummingbird",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "is_colorful": 0.8,
+        "is_fast": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "woodpecker",
+      "name": "a woodpecker",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "lives_in_trees": 0.9,
+        "makes_noise": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "pelican",
+      "name": "a pelican",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "can_swim": 0.8,
+        "eats_fish": 1.0,
+        "is_large": 0.6,
+        "lives_in_ocean": 0.7,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "seagull",
+      "name": "a seagull",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "lives_in_ocean": 0.8,
+        "is_white": 0.8,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "stork",
+      "name": "a stork",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "has_long_neck": 0.7,
+        "is_large": 0.6,
+        "migrates": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "heron",
+      "name": "a heron",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "has_long_neck": 0.8,
+        "lives_in_water": 0.6,
+        "eats_fish": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "kingfisher",
+      "name": "a kingfisher",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_bird": 1.0,
+        "has_feathers": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "has_beak": 1.0,
+        "is_colorful": 1.0,
+        "eats_fish": 1.0,
+        "is_small": 0.8,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "snake",
+      "name": "a snake",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_no_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 0.9,
+        "lays_eggs": 0.8,
+        "is_venomous": 0.4,
+        "is_long": 1.0
+      }
+    },
+    {
+      "id": "python",
+      "name": "a python",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_no_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_large": 0.8,
+        "is_strong": 0.9,
+        "is_long": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "cobra",
+      "name": "a cobra",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_no_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_venomous": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_asia": 0.7,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "rattlesnake",
+      "name": "a rattlesnake",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_no_legs": 1.0,
+        "is_carnivore": 1.0,
+        "is_venomous": 1.0,
+        "is_dangerous": 0.9,
+        "lives_in_americas": 1.0,
+        "makes_noise": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "crocodile",
+      "name": "a crocodile",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_large": 0.9,
+        "lives_in_water": 0.8,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_dangerous": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "alligator",
+      "name": "an alligator",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_large": 0.9,
+        "lives_in_water": 0.8,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_dangerous": 1.0,
+        "lives_in_americas": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "turtle",
+      "name": "a turtle",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_shell": 1.0,
+        "has_four_legs": 1.0,
+        "lives_in_water": 0.7,
+        "can_swim": 0.8,
+        "lays_eggs": 1.0,
+        "is_herbivore": 0.6
+      }
+    },
+    {
+      "id": "tortoise",
+      "name": "a tortoise",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_shell": 1.0,
+        "has_four_legs": 1.0,
+        "is_herbivore": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "lizard",
+      "name": "a lizard",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_small": 0.7,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "iguana",
+      "name": "an iguana",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_herbivore": 0.9,
+        "lives_in_americas": 0.9,
+        "is_pet": 0.4,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "gecko",
+      "name": "a gecko",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "is_small": 1.0,
+        "is_nocturnal": 0.7,
+        "can_climb": 1.0,
+        "eats_insects": 0.9,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "chameleon",
+      "name": "a chameleon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_small": 0.8,
+        "is_colorful": 0.9,
+        "lives_in_trees": 0.8,
+        "eats_insects": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "komodo_dragon",
+      "name": "a Komodo dragon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_reptile": 1.0,
+        "has_scales": 1.0,
+        "has_four_legs": 1.0,
+        "is_large": 0.9,
+        "is_carnivore": 1.0,
+        "is_predator": 1.0,
+        "is_dangerous": 0.9,
+        "is_venomous": 0.8,
+        "lives_in_asia": 1.0,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "frog",
+      "name": "a frog",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_amphibian": 1.0,
+        "has_four_legs": 1.0,
+        "is_small": 0.9,
+        "lives_in_water": 0.6,
+        "can_swim": 0.9,
+        "can_jump": 1.0,
+        "lays_eggs": 1.0,
+        "eats_insects": 1.0,
+        "makes_noise": 0.8
+      }
+    },
+    {
+      "id": "toad",
+      "name": "a toad",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_amphibian": 1.0,
+        "has_four_legs": 1.0,
+        "is_small": 0.9,
+        "can_jump": 0.8,
+        "lays_eggs": 1.0,
+        "eats_insects": 1.0,
+        "is_venomous": 0.3
+      }
+    },
+    {
+      "id": "salamander",
+      "name": "a salamander",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_amphibian": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_small": 0.9,
+        "lives_in_water": 0.5,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "newt",
+      "name": "a newt",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_amphibian": 1.0,
+        "has_four_legs": 1.0,
+        "has_tail": 1.0,
+        "is_small": 1.0,
+        "lives_in_water": 0.6,
+        "lays_eggs": 1.0
+      }
+    },
+    {
+      "id": "shark",
+      "name": "a shark",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 0.7,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_dangerous": 0.8,
+        "is_large": 0.7,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "goldfish",
+      "name": "a goldfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_freshwater": 1.0,
+        "can_swim": 1.0,
+        "is_small": 1.0,
+        "is_pet": 0.9,
+        "is_orange": 0.9,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "salmon",
+      "name": "a salmon",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.9,
+        "migrates": 0.9,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "tuna",
+      "name": "a tuna",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.9,
+        "is_large": 0.6,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "cod",
+      "name": "a cod",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.9,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "trout",
+      "name": "a trout",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_freshwater": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.8,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "bass",
+      "name": "a bass",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.7,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "catfish",
+      "name": "a catfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_freshwater": 1.0,
+        "can_swim": 1.0,
+        "is_food": 0.7,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "swordfish",
+      "name": "a swordfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_large": 0.8,
+        "is_fast": 0.9,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "manta_ray",
+      "name": "a manta ray",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_large": 0.9,
+        "is_flat": 0.9,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "eel",
+      "name": "an eel",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "lives_in_water": 1.0,
+        "can_swim": 1.0,
+        "is_long": 1.0,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "piranha",
+      "name": "a piranha",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_freshwater": 1.0,
+        "can_swim": 1.0,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_dangerous": 0.8,
+        "lives_in_americas": 1.0,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "clownfish",
+      "name": "a clownfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "has_scales": 1.0,
+        "has_fins": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_small": 1.0,
+        "is_colorful": 1.0,
+        "is_orange": 0.8,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "seahorse",
+      "name": "a seahorse",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 0.7,
+        "is_small": 1.0,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "pufferfish",
+      "name": "a pufferfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_fish": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "is_venomous": 0.9,
+        "is_round": 0.7,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "butterfly",
+      "name": "a butterfly",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_colorful": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "moth",
+      "name": "a moth",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_nocturnal": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "bee",
+      "name": "a bee",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "is_venomous": 0.8,
+        "makes_noise": 0.8,
+        "lives_in_groups": 1.0,
+        "is_yellow": 0.7,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "wasp",
+      "name": "a wasp",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_venomous": 0.9,
+        "is_dangerous": 0.5,
+        "is_yellow": 0.7,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "hornet",
+      "name": "a hornet",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 0.8,
+        "is_venomous": 1.0,
+        "is_dangerous": 0.7,
+        "is_aggressive": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "ant",
+      "name": "an ant",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "lives_underground": 0.8,
+        "lives_in_groups": 1.0,
+        "is_strong": 0.7,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "termite",
+      "name": "a termite",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_tiny": 1.0,
+        "lives_underground": 0.7,
+        "lives_in_groups": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "beetle",
+      "name": "a beetle",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 0.8,
+        "is_small": 1.0,
+        "has_shell": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "ladybug",
+      "name": "a ladybug",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "is_red": 0.9,
+        "has_spots": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "dragonfly",
+      "name": "a dragonfly",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 0.9,
+        "is_predator": 0.9,
+        "is_colorful": 0.7,
+        "lives_in_water": 0.3,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "grasshopper",
+      "name": "a grasshopper",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 0.8,
+        "is_small": 1.0,
+        "can_jump": 1.0,
+        "is_green": 0.8,
+        "makes_noise": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "cricket",
+      "name": "a cricket",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_small": 1.0,
+        "can_jump": 1.0,
+        "makes_noise": 1.0,
+        "is_nocturnal": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "cockroach",
+      "name": "a cockroach",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_small": 1.0,
+        "is_nocturnal": 1.0,
+        "is_fast": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "fly",
+      "name": "a fly",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "mosquito",
+      "name": "a mosquito",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_tiny": 1.0,
+        "is_dangerous": 0.6,
+        "makes_noise": 0.7,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "firefly",
+      "name": "a firefly",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "has_wings": 1.0,
+        "can_fly": 1.0,
+        "is_small": 1.0,
+        "is_nocturnal": 1.0,
+        "produces_light": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "caterpillar",
+      "name": "a caterpillar",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_small": 1.0,
+        "is_long": 0.7,
+        "is_herbivore": 1.0,
+        "is_colorful": 0.6,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "praying_mantis",
+      "name": "a praying mantis",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_insect": 1.0,
+        "is_small": 0.8,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_green": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "spider",
+      "name": "a spider",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_arachnid": 1.0,
+        "is_small": 0.9,
+        "is_predator": 1.0,
+        "is_carnivore": 1.0,
+        "is_venomous": 0.5,
+        "eats_insects": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "tarantula",
+      "name": "a tarantula",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_arachnid": 1.0,
+        "is_small": 0.6,
+        "is_predator": 1.0,
+        "is_venomous": 0.6,
+        "has_fur": 0.8,
+        "is_pet": 0.3,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "scorpion",
+      "name": "a scorpion",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_arachnid": 1.0,
+        "is_small": 0.8,
+        "has_tail": 1.0,
+        "is_predator": 1.0,
+        "is_venomous": 1.0,
+        "is_dangerous": 0.7,
+        "lives_in_desert": 0.7,
+        "is_nocturnal": 0.8,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "tick",
+      "name": "a tick",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_arachnid": 1.0,
+        "is_tiny": 1.0,
+        "is_dangerous": 0.6,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "crab",
+      "name": "a crab",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_crustacean": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 0.8,
+        "lives_in_ocean": 0.7,
+        "can_swim": 0.6,
+        "is_small": 0.7,
+        "is_food": 0.7,
+        "has_claws": 1.0,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "lobster",
+      "name": "a lobster",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_crustacean": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_food": 0.9,
+        "has_claws": 1.0,
+        "is_red": 0.7,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "shrimp",
+      "name": "a shrimp",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_crustacean": 1.0,
+        "has_shell": 0.8,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 0.8,
+        "is_small": 1.0,
+        "is_food": 0.9,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "crayfish",
+      "name": "a crayfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_crustacean": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_freshwater": 1.0,
+        "is_small": 0.9,
+        "has_claws": 1.0,
+        "is_food": 0.6,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "octopus",
+      "name": "an octopus",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "has_tentacles": 1.0,
+        "is_intelligent": 0.9,
+        "is_predator": 0.8,
+        "has_no_legs": 0.2
+      }
+    },
+    {
+      "id": "squid",
+      "name": "a squid",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 1.0,
+        "has_tentacles": 1.0,
+        "is_predator": 0.8,
+        "is_food": 0.7
+      }
+    },
+    {
+      "id": "snail",
+      "name": "a snail",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "has_shell": 1.0,
+        "is_small": 1.0,
+        "is_herbivore": 0.8,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "slug",
+      "name": "a slug",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "is_small": 1.0,
+        "is_herbivore": 0.8,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "clam",
+      "name": "a clam",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 0.8,
+        "is_food": 0.7
+      }
+    },
+    {
+      "id": "oyster",
+      "name": "an oyster",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_food": 0.8
+      }
+    },
+    {
+      "id": "mussel",
+      "name": "a mussel",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 0.8,
+        "is_food": 0.7
+      }
+    },
+    {
+      "id": "scallop",
+      "name": "a scallop",
+      "attributes": {
+        "is_animal": 1.0,
+        "is_mollusk": 1.0,
+        "has_shell": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_food": 0.8,
+        "can_swim": 0.6
+      }
+    },
+    {
+      "id": "jellyfish",
+      "name": "a jellyfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "can_swim": 0.7,
+        "has_tentacles": 1.0,
+        "is_venomous": 0.7,
+        "is_transparent": 0.8,
+        "has_no_legs": 1.0
+      }
+    },
+    {
+      "id": "starfish",
+      "name": "a starfish",
+      "attributes": {
+        "is_animal": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_colorful": 0.6,
+        "has_many_legs": 1.0
+      }
+    },
+    {
+      "id": "sea_urchin",
+      "name": "a sea urchin",
+      "attributes": {
+        "is_animal": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "has_shell": 0.7,
+        "is_round": 0.9,
+        "is_venomous": 0.5
+      }
+    },
+    {
+      "id": "coral",
+      "name": "coral",
+      "attributes": {
+        "is_animal": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_colorful": 0.8
+      }
+    },
+    {
+      "id": "apple",
+      "name": "an apple",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.8,
+        "is_red": 0.6,
+        "is_green": 0.3,
+        "is_natural": 1.0,
+        "is_solid": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "orange",
+      "name": "an orange",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 1.0,
+        "has_seeds": 0.9,
+        "has_skin": 1.0,
+        "is_sweet": 0.8,
+        "is_sour": 0.4,
+        "is_orange": 1.0,
+        "is_tropical": 0.6,
+        "is_natural": 1.0,
+        "is_solid": 1.0
+      }
+    },
+    {
+      "id": "banana",
+      "name": "a banana",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 0.9,
+        "is_long": 0.8,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_yellow": 1.0,
+        "is_tropical": 1.0,
+        "is_natural": 1.0,
+        "is_solid": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "grape",
+      "name": "a grape",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_round": 1.0,
+        "is_small": 1.0,
+        "has_seeds": 0.7,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_purple": 0.6,
+        "is_green": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "strawberry",
+      "name": "a strawberry",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "is_small": 1.0,
+        "has_seeds": 1.0,
+        "is_sweet": 0.9,
+        "is_red": 1.0,
+        "is_natural": 1.0,
+        "is_solid": 1.0
+      }
+    },
+    {
+      "id": "blueberry",
+      "name": "a blueberry",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "is_small": 1.0,
+        "is_tiny": 0.9,
+        "is_round": 1.0,
+        "is_sweet": 0.8,
+        "is_blue": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "raspberry",
+      "name": "a raspberry",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "is_small": 1.0,
+        "is_sweet": 0.8,
+        "is_red": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "blackberry",
+      "name": "a blackberry",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "is_small": 1.0,
+        "is_sweet": 0.7,
+        "is_black": 1.0,
+        "grows_on_vines": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cherry",
+      "name": "a cherry",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 1.0,
+        "is_round": 1.0,
+        "has_pit": 1.0,
+        "is_sweet": 0.8,
+        "is_red": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "peach",
+      "name": "a peach",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 0.8,
+        "has_pit": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_orange": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "plum",
+      "name": "a plum",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 0.9,
+        "has_pit": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.8,
+        "is_purple": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "apricot",
+      "name": "an apricot",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 0.8,
+        "has_pit": 1.0,
+        "is_sweet": 0.8,
+        "is_orange": 0.9,
+        "is_natural": 1.0,
+        "is_small": 0.8
+      }
+    },
+    {
+      "id": "pear",
+      "name": "a pear",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_seeds": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.8,
+        "is_green": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "mango",
+      "name": "a mango",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_pit": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 1.0,
+        "is_orange": 0.7,
+        "is_yellow": 0.5,
+        "is_tropical": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pineapple",
+      "name": "a pineapple",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_sour": 0.4,
+        "is_yellow": 0.9,
+        "is_tropical": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "coconut",
+      "name": "a coconut",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_nut": 0.5,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_shell": 1.0,
+        "is_round": 0.9,
+        "is_brown": 0.9,
+        "is_tropical": 1.0,
+        "is_natural": 1.0,
+        "is_hard": 1.0
+      }
+    },
+    {
+      "id": "papaya",
+      "name": "a papaya",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_seeds": 1.0,
+        "is_sweet": 0.9,
+        "is_orange": 0.8,
+        "is_tropical": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "kiwi",
+      "name": "a kiwi fruit",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_small": 0.9,
+        "has_skin": 1.0,
+        "has_seeds": 1.0,
+        "is_sweet": 0.7,
+        "is_sour": 0.4,
+        "is_green": 0.9,
+        "is_brown": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "watermelon",
+      "name": "a watermelon",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_large": 0.8,
+        "is_round": 0.8,
+        "has_seeds": 0.9,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_red": 0.8,
+        "is_green": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cantaloupe",
+      "name": "a cantaloupe",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.9,
+        "is_orange": 0.9,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "honeydew",
+      "name": "a honeydew melon",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "is_sweet": 0.9,
+        "is_green": 0.9,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "lemon",
+      "name": "a lemon",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_seeds": 0.8,
+        "has_skin": 1.0,
+        "is_sour": 1.0,
+        "is_yellow": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "lime",
+      "name": "a lime",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_seeds": 0.8,
+        "has_skin": 1.0,
+        "is_sour": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0,
+        "is_small": 0.8
+      }
+    },
+    {
+      "id": "grapefruit",
+      "name": "a grapefruit",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 1.0,
+        "has_seeds": 0.8,
+        "has_skin": 1.0,
+        "is_sour": 0.7,
+        "is_bitter": 0.5,
+        "is_yellow": 0.6,
+        "is_pink": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pomegranate",
+      "name": "a pomegranate",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "has_skin": 1.0,
+        "is_sweet": 0.7,
+        "is_red": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "fig",
+      "name": "a fig",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 0.9,
+        "has_seeds": 1.0,
+        "is_sweet": 0.9,
+        "is_purple": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "date",
+      "name": "a date",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 0.9,
+        "has_pit": 1.0,
+        "is_sweet": 1.0,
+        "is_brown": 1.0,
+        "lives_in_desert": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "avocado",
+      "name": "an avocado",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "has_pit": 1.0,
+        "has_skin": 1.0,
+        "is_green": 1.0,
+        "is_savory": 0.6,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "tomato",
+      "name": "a tomato",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fruit": 0.8,
+        "is_vegetable_food": 0.8,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "has_skin": 1.0,
+        "is_red": 0.9,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "carrot",
+      "name": "a carrot",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_long": 0.8,
+        "is_orange": 1.0,
+        "is_sweet": 0.4,
+        "is_natural": 1.0,
+        "is_hard": 0.7,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "potato",
+      "name": "a potato",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_round": 0.7,
+        "is_brown": 0.8,
+        "is_savory": 0.6,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "sweet_potato",
+      "name": "a sweet potato",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_sweet": 0.7,
+        "is_orange": 0.9,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "onion",
+      "name": "an onion",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_round": 0.9,
+        "has_skin": 1.0,
+        "is_savory": 0.8,
+        "is_white": 0.5,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "garlic",
+      "name": "garlic",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_herb": 0.5,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_small": 0.9,
+        "is_white": 0.9,
+        "is_savory": 0.9,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "celery",
+      "name": "celery",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_long": 0.9,
+        "is_green": 1.0,
+        "is_savory": 0.5,
+        "has_leaves": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "broccoli",
+      "name": "broccoli",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_green": 1.0,
+        "has_leaves": 0.7,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "cauliflower",
+      "name": "cauliflower",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_white": 1.0,
+        "has_leaves": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cabbage",
+      "name": "a cabbage",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_round": 0.8,
+        "is_green": 0.8,
+        "has_leaves": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "lettuce",
+      "name": "lettuce",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_green": 1.0,
+        "has_leaves": 1.0,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "spinach",
+      "name": "spinach",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_green": 1.0,
+        "has_leaves": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "kale",
+      "name": "kale",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_green": 1.0,
+        "has_leaves": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cucumber",
+      "name": "a cucumber",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_long": 0.8,
+        "is_cylindrical": 0.9,
+        "is_green": 1.0,
+        "has_seeds": 1.0,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "zucchini",
+      "name": "a zucchini",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_long": 0.8,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "squash",
+      "name": "a squash",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "has_seeds": 1.0,
+        "is_yellow": 0.6,
+        "is_orange": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pumpkin",
+      "name": "a pumpkin",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 1.0,
+        "is_large": 0.7,
+        "is_round": 0.9,
+        "has_seeds": 1.0,
+        "is_orange": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "eggplant",
+      "name": "an eggplant",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_on_vines": 0.8,
+        "is_purple": 1.0,
+        "has_skin": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pepper",
+      "name": "a bell pepper",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "has_seeds": 1.0,
+        "is_colorful": 0.9,
+        "is_red": 0.4,
+        "is_green": 0.3,
+        "is_yellow": 0.3,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "chili",
+      "name": "a chili pepper",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_herb": 0.5,
+        "is_food": 1.0,
+        "is_small": 0.8,
+        "is_spicy": 1.0,
+        "is_red": 0.7,
+        "is_green": 0.3,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "corn",
+      "name": "corn",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_grain": 0.5,
+        "is_food": 1.0,
+        "has_seeds": 1.0,
+        "is_yellow": 1.0,
+        "is_sweet": 0.6,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "peas",
+      "name": "peas",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_small": 1.0,
+        "is_round": 1.0,
+        "is_green": 1.0,
+        "is_sweet": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "green_beans",
+      "name": "green beans",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_long": 0.9,
+        "is_green": 1.0,
+        "has_seeds": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "asparagus",
+      "name": "asparagus",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_long": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "artichoke",
+      "name": "an artichoke",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_green": 0.9,
+        "has_leaves": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "beet",
+      "name": "a beet",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_round": 0.8,
+        "is_red": 0.9,
+        "is_purple": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "radish",
+      "name": "a radish",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_small": 0.9,
+        "is_round": 0.8,
+        "is_red": 0.8,
+        "is_spicy": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "turnip",
+      "name": "a turnip",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_round": 0.8,
+        "is_white": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "parsnip",
+      "name": "a parsnip",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_long": 0.8,
+        "is_white": 0.9,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "leek",
+      "name": "a leek",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_vegetable_food": 1.0,
+        "is_food": 1.0,
+        "is_long": 0.9,
+        "is_green": 0.7,
+        "is_white": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "mushroom",
+      "name": "a mushroom",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_fungus": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 0.3,
+        "is_small": 0.8,
+        "is_brown": 0.6,
+        "is_white": 0.4,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "peanut",
+      "name": "a peanut",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_small": 1.0,
+        "has_shell": 0.9,
+        "is_brown": 0.9,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "walnut",
+      "name": "a walnut",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 0.9,
+        "has_shell": 1.0,
+        "is_brown": 1.0,
+        "is_round": 0.7,
+        "is_natural": 1.0,
+        "is_hard": 1.0
+      }
+    },
+    {
+      "id": "almond",
+      "name": "an almond",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 1.0,
+        "has_shell": 0.8,
+        "is_brown": 0.9,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cashew",
+      "name": "a cashew",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 1.0,
+        "is_tropical": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pistachio",
+      "name": "a pistachio",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 1.0,
+        "has_shell": 1.0,
+        "is_green": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "hazelnut",
+      "name": "a hazelnut",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 1.0,
+        "has_shell": 1.0,
+        "is_round": 0.8,
+        "is_brown": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pecan",
+      "name": "a pecan",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 0.9,
+        "has_shell": 1.0,
+        "is_brown": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "chestnut",
+      "name": "a chestnut",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "grows_on_trees": 1.0,
+        "is_small": 0.8,
+        "has_shell": 1.0,
+        "is_brown": 1.0,
+        "is_round": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "sunflower_seed",
+      "name": "a sunflower seed",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "is_tiny": 1.0,
+        "has_shell": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "sesame_seed",
+      "name": "a sesame seed",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_nut": 1.0,
+        "is_food": 1.0,
+        "is_tiny": 1.0,
+        "is_white": 0.6,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "wheat",
+      "name": "wheat",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_grain": 1.0,
+        "is_food": 1.0,
+        "is_grass": 1.0,
+        "is_brown": 0.7,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "rice",
+      "name": "rice",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_grain": 1.0,
+        "is_food": 1.0,
+        "is_tiny": 1.0,
+        "is_white": 0.8,
+        "grows_in_water": 0.7,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "oats",
+      "name": "oats",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_grain": 1.0,
+        "is_food": 1.0,
+        "is_grass": 1.0,
+        "is_brown": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "barley",
+      "name": "barley",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_grain": 1.0,
+        "is_food": 1.0,
+        "is_grass": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "basil",
+      "name": "basil",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "mint",
+      "name": "mint",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "parsley",
+      "name": "parsley",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cilantro",
+      "name": "cilantro",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "rosemary",
+      "name": "rosemary",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "thyme",
+      "name": "thyme",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_small": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "oregano",
+      "name": "oregano",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "sage",
+      "name": "sage",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "ginger",
+      "name": "ginger",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "grows_underground": 1.0,
+        "is_spicy": 0.7,
+        "is_brown": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cinnamon",
+      "name": "cinnamon",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "is_brown": 1.0,
+        "is_sweet": 0.5,
+        "is_spicy": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "vanilla",
+      "name": "vanilla",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "is_sweet": 0.8,
+        "is_brown": 0.7,
+        "is_tropical": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "pepper_spice",
+      "name": "black pepper",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_herb": 1.0,
+        "is_food": 1.0,
+        "is_tiny": 1.0,
+        "is_spicy": 0.8,
+        "is_black": 1.0,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "oak_tree",
+      "name": "an oak tree",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_tree": 1.0,
+        "is_large": 1.0,
+        "has_leaves": 1.0,
+        "is_brown": 0.5,
+        "is_green": 0.5,
+        "is_natural": 1.0,
+        "is_wood": 1.0
+      }
+    },
+    {
+      "id": "pine_tree",
+      "name": "a pine tree",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_tree": 1.0,
+        "is_large": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "lives_in_arctic": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "palm_tree",
+      "name": "a palm tree",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_tree": 1.0,
+        "is_large": 1.0,
+        "has_leaves": 1.0,
+        "is_tropical": 1.0,
+        "is_green": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "maple_tree",
+      "name": "a maple tree",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_tree": 1.0,
+        "is_large": 1.0,
+        "has_leaves": 1.0,
+        "is_colorful": 0.7,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "bamboo",
+      "name": "bamboo",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_grass": 1.0,
+        "is_large": 0.7,
+        "is_long": 0.9,
+        "is_green": 1.0,
+        "lives_in_asia": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "cactus",
+      "name": "a cactus",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "lives_in_desert": 1.0,
+        "is_green": 1.0,
+        "is_dangerous": 0.4,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "seaweed",
+      "name": "seaweed",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_aquatic_plant": 1.0,
+        "lives_in_water": 1.0,
+        "lives_in_ocean": 1.0,
+        "is_green": 0.8,
+        "is_food": 0.6,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "moss",
+      "name": "moss",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_small": 1.0,
+        "is_green": 1.0,
+        "lives_in_water": 0.3,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "fern",
+      "name": "a fern",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "ivy",
+      "name": "ivy",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "grows_on_vines": 1.0,
+        "has_leaves": 1.0,
+        "is_green": 1.0,
+        "can_climb": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "rose",
+      "name": "a rose",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_red": 0.6,
+        "is_colorful": 0.9,
+        "is_dangerous": 0.3,
+        "is_natural": 1.0,
+        "is_decorative": 1.0
+      }
+    },
+    {
+      "id": "sunflower",
+      "name": "a sunflower",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_large": 0.6,
+        "is_yellow": 1.0,
+        "is_round": 0.8,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "tulip",
+      "name": "a tulip",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_colorful": 1.0,
+        "is_natural": 1.0,
+        "is_decorative": 1.0
+      }
+    },
+    {
+      "id": "daisy",
+      "name": "a daisy",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_small": 0.8,
+        "is_white": 0.8,
+        "is_yellow": 0.5,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "lily",
+      "name": "a lily",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_white": 0.6,
+        "is_colorful": 0.7,
+        "is_natural": 1.0,
+        "is_decorative": 1.0
+      }
+    },
+    {
+      "id": "orchid",
+      "name": "an orchid",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_colorful": 1.0,
+        "is_tropical": 0.7,
+        "is_rare": 0.5,
+        "is_natural": 1.0,
+        "is_decorative": 1.0
+      }
+    },
+    {
+      "id": "dandelion",
+      "name": "a dandelion",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_small": 0.9,
+        "is_yellow": 0.8,
+        "is_white": 0.5,
+        "is_natural": 1.0,
+        "is_common": 1.0
+      }
+    },
+    {
+      "id": "lavender",
+      "name": "lavender",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_herb": 0.5,
+        "is_purple": 1.0,
+        "is_natural": 1.0
+      }
+    },
+    {
+      "id": "lotus",
+      "name": "a lotus",
+      "attributes": {
+        "is_vegetable": 1.0,
+        "is_flower": 1.0,
+        "is_aquatic_plant": 1.0,
+        "grows_in_water": 1.0,
+        "is_colorful": 0.8,
+        "is_natural": 1.0
+      }
+    }
+  ]
+}
