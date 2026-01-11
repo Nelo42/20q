@@ -114,6 +114,17 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
         ('has_feathers', 0.0),
         ('has_scales', 0.1),
     ],
+    ('is_mammal', 0.0): [
+        # If not a mammal, exclude all mammal-specific families
+        ('is_primate', 0.0),
+        ('is_rodent', 0.0),
+        ('is_feline', 0.0),
+        ('is_canine', 0.0),
+        ('is_bovine', 0.0),
+        ('is_equine', 0.0),
+        ('is_cetacean', 0.0),
+        ('is_marsupial', 0.0),
+    ],
     ('is_bird', 1.0): [
         ('is_animal', 1.0),
         ('is_mammal', 0.0),
@@ -197,7 +208,12 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
         ('has_shell', 0.95),
         ('lives_in_water', 0.9),
         ('has_many_legs', 1.0),
+        ('has_pincers', 0.9),
         ('is_mammal', 0.0),
+        ('is_bird', 0.0),
+        ('is_fish', 0.0),
+        ('is_reptile', 0.0),
+        ('is_insect', 0.0),
     ],
     ('is_mollusk', 1.0): [
         ('is_animal', 1.0),
@@ -240,7 +256,7 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
         ('is_mammal', 1.0),
         ('is_animal', 1.0),
         ('has_pouch', 1.0),
-        ('lives_in_australia', 0.8),
+        ('lives_in_australia', 0.6),  # Reduced: opossums are American marsupials
     ],
     ('is_equine', 1.0): [
         ('is_mammal', 1.0),
@@ -290,6 +306,14 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
     ('has_shell', 1.0): [
         ('is_soft', 0.0),
     ],
+    ('has_wool', 1.0): [
+        ('is_mammal', 1.0),
+        ('is_farm_animal', 0.9),
+        ('has_fur', 1.0),  # Wool is a type of fur
+    ],
+    ('has_long_body', 1.0): [
+        ('is_round', 0.0),
+    ],
     ('has_tentacles', 1.0): [
         ('is_mollusk', 0.8),
         ('lives_in_water', 0.9),
@@ -317,6 +341,29 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
         ('is_small', 1.0),
         ('is_large', 0.0),
         ('is_huge', 0.0),
+    ],
+
+    # ========================================
+    # DOMESTICATION/HABITAT IMPLICATIONS
+    # ========================================
+    ('is_pet', 1.0): [
+        ('is_domesticated', 1.0),
+        ('is_animal', 1.0),
+        ('is_wild', 0.1),  # Pets are rarely wild
+    ],
+    ('is_farm_animal', 1.0): [
+        ('is_domesticated', 1.0),
+        ('is_animal', 1.0),
+        ('is_wild', 0.1),  # Farm animals are rarely wild
+    ],
+    ('is_domesticated', 1.0): [
+        ('is_animal', 1.0),
+        ('is_wild', 0.2),  # Domesticated animals can occasionally be wild (feral)
+    ],
+    ('is_wild', 1.0): [
+        ('is_animal', 1.0),
+        ('is_pet', 0.1),  # Wild animals are rarely pets
+        ('is_domesticated', 0.2),  # Wild animals are rarely domesticated
     ],
 
     # ========================================
@@ -365,12 +412,42 @@ ATTRIBUTE_IMPLICATIONS: Dict[Tuple[str, float], List[Tuple[str, float]]] = {
         ('is_food', 1.0),
         ('is_animal', 0.0),
         ('is_mineral', 0.0),
+        ('is_vegetable_food', 0.1),  # Fruits aren't typically culinary vegetables
+        # Note: Removed has_leaves implication - fruits grow on plants that have leaves
     ],
     ('is_vegetable_food', 1.0): [
         ('is_vegetable', 1.0),
         ('is_food', 1.0),
         ('is_animal', 0.0),
         ('is_mineral', 0.0),
+        ('is_fruit', 0.2),  # Culinary vegetables aren't typically fruits
+    ],
+    ('has_leaves', 1.0): [
+        ('is_vegetable', 1.0),
+        # Note: Removed is_fruit=0 - many fruits grow on plants with leaves (apples, oranges, etc.)
+    ],
+    ('is_berry', 1.0): [
+        ('is_vegetable', 1.0),
+        ('is_fruit', 1.0),
+        ('is_small', 1.0),
+        ('is_food', 1.0),
+        ('is_animal', 0.0),
+        ('is_mineral', 0.0),
+    ],
+    ('is_citrus', 1.0): [
+        ('is_vegetable', 1.0),
+        ('is_fruit', 1.0),
+        ('has_skin', 1.0),
+        ('is_food', 1.0),
+        ('is_sour', 0.8),
+        ('is_berry', 0.0),  # Citrus are not berries
+        ('is_animal', 0.0),
+        ('is_mineral', 0.0),
+    ],
+    ('grows_on_bushes', 1.0): [
+        ('is_vegetable', 1.0),
+        ('grows_on_trees', 0.0),
+        ('grows_underground', 0.0),
     ],
     ('is_tree', 1.0): [
         ('is_vegetable', 1.0),
@@ -568,17 +645,37 @@ class ImplicationEngine:
         """
         Get all attributes that are logically determined from known answers.
 
+        Uses iterative propagation to handle transitive implications:
+        e.g., is_bird=1 -> is_mammal=0 -> is_cetacean=0
+
         Args:
             known_answers: Dict of {attr_id: answer_value}
 
         Returns:
             Dict of {attr_id: implied_value} for all determined attributes
         """
+        # Create a working copy that includes both known and determined
+        all_known = dict(known_answers)
         determined = {}
 
-        for attr_id in self.implied_by:
-            is_det, implied_val = self.is_already_determined(attr_id, known_answers)
-            if is_det:
-                determined[attr_id] = implied_val
+        # Iterate until no new determinations
+        max_iterations = 10  # Prevent infinite loops
+        for _ in range(max_iterations):
+            new_determinations = {}
+
+            for attr_id in self.implied_by:
+                if attr_id in all_known:
+                    continue  # Already known or determined
+
+                is_det, implied_val = self.is_already_determined(attr_id, all_known)
+                if is_det:
+                    new_determinations[attr_id] = implied_val
+
+            if not new_determinations:
+                break  # Converged, no new determinations
+
+            # Add new determinations to working set
+            all_known.update(new_determinations)
+            determined.update(new_determinations)
 
         return determined

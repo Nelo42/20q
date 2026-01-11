@@ -12,19 +12,23 @@ import copy
 @dataclass
 class Entity:
     """
-    An entity (animal) that can be guessed.
+    An entity (animal, plant, object) that can be guessed.
 
     Attributes:
         id: Unique identifier
         name: Display name (e.g., "a dog", "an elephant")
         attributes: Dict mapping attribute_id -> P(yes|entity)
                    Values are probabilities between 0.0 and 1.0
+        popularity_rank: Lower = more commonly thought of (used for priors)
+        category: High-level category (animal, plant, object)
         times_played: Number of times this entity was the target
         times_guessed_correctly: Number of successful guesses
     """
     id: str
     name: str
     attributes: Dict[str, float] = field(default_factory=dict)
+    popularity_rank: int = 500  # Default to mid-range popularity
+    category: str = "unknown"
     times_played: int = 0
     times_guessed_correctly: int = 0
 
@@ -38,6 +42,8 @@ class Entity:
             "id": self.id,
             "name": self.name,
             "attributes": self.attributes,
+            "popularity_rank": self.popularity_rank,
+            "category": self.category,
             "times_played": self.times_played,
             "times_guessed_correctly": self.times_guessed_correctly,
         }
@@ -49,6 +55,8 @@ class Entity:
             id=data["id"],
             name=data["name"],
             attributes=data.get("attributes", {}),
+            popularity_rank=data.get("popularity_rank", 500),
+            category=data.get("category", "unknown"),
             times_played=data.get("times_played", 0),
             times_guessed_correctly=data.get("times_guessed_correctly", 0),
         )

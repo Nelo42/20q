@@ -22,8 +22,8 @@ def clear_screen():
 def print_header():
     """Print the game header."""
     print("=" * 60)
-    print("         TWENTY QUESTIONS - Animal Guessing Game")
-    print("           Powered by Bayesian Inference")
+    print("                    TWENTY QUESTIONS")
+    print("          Animal, Vegetable, or Mineral?")
     print("=" * 60)
 
 
@@ -82,7 +82,7 @@ def play_game(engine: GameEngine, show_debug: bool = False) -> bool:
     """
     engine.start_game()
 
-    print("\n  Think of an animal and I'll try to guess it!")
+    print("\n  Think of something - Animal, Vegetable, or Mineral!")
     print("  Answer my questions with 'yes', 'no', or 'maybe'.")
     input("\n  Press Enter when you're ready...")
 
@@ -151,8 +151,8 @@ def play_game(engine: GameEngine, show_debug: bool = False) -> bool:
 
 def handle_wrong_guess(engine: GameEngine):
     """Handle a wrong guess by learning from the user."""
-    print("\n  What animal were you thinking of?")
-    actual_name = input("  Animal name: ").strip()
+    print("\n  What were you thinking of?")
+    actual_name = input("  Your answer: ").strip()
 
     if not actual_name:
         print("  No name provided. Skipping learning.")

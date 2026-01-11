@@ -224,7 +224,9 @@ class GameEngine:
         return self.qs.should_guess(
             self.beliefs,
             threshold=self.config.guess_threshold,
-            min_margin=self.config.guess_margin
+            min_margin=self.config.guess_margin,
+            questions_asked=self.current_question,
+            max_questions=self.config.max_questions
         )
 
     def get_guess(self) -> Optional[Tuple[str, str, float]]:

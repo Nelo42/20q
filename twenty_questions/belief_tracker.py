@@ -5,9 +5,10 @@ Implements Bayesian belief updates based on user answers.
 """
 
 import numpy as np
-from typing import Optional
+from typing import Optional, List, Tuple
 from .models import BeliefState
 from .knowledge_base import KnowledgeBase
+from .implications import ImplicationEngine
 
 
 class BeliefTracker:
@@ -35,6 +36,7 @@ class BeliefTracker:
         self.kb = knowledge_base
         self.unknown_likelihood = unknown_likelihood
         self.smoothing = smoothing
+        self.implication_engine = ImplicationEngine()
 
     def initialize_beliefs(self) -> BeliefState:
         """Create uniform prior distribution over all entities."""
@@ -50,13 +52,44 @@ class BeliefTracker:
         """
         Update beliefs based on an answer to a question.
 
-        Uses Bayes' theorem:
-        P(entity|answer) ∝ P(answer|entity) * P(entity)
+        Uses Bayes' theorem with implication propagation:
+        1. Apply direct update for the answered attribute
+        2. Propagate logical implications to update beliefs for implied attributes
 
         Args:
             beliefs: Current belief state
             attribute_id: The attribute/question that was asked
             answer: User's answer (1.0=yes, 0.0=no, 0.5=unknown)
+
+        Returns:
+            Updated belief state
+        """
+        # First, apply the direct update for the answered attribute
+        result = self._apply_single_update(beliefs, attribute_id, answer)
+
+        # Then, propagate logical implications
+        implications = self.implication_engine.get_implications(attribute_id, answer)
+        for implied_attr, implied_val in implications:
+            result = self._apply_single_update(result, implied_attr, implied_val)
+
+        return result
+
+    def _apply_single_update(
+        self,
+        beliefs: BeliefState,
+        attribute_id: str,
+        answer: float
+    ) -> BeliefState:
+        """
+        Apply a single Bayesian update for one attribute.
+
+        Uses Bayes' theorem:
+        P(entity|answer) ∝ P(answer|entity) * P(entity)
+
+        Args:
+            beliefs: Current belief state
+            attribute_id: The attribute to update
+            answer: The answer value (1.0=yes, 0.0=no, 0.5=unknown)
 
         Returns:
             Updated belief state
