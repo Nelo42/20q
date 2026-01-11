@@ -293,6 +293,17 @@
 
     {"id": "is_fastener", "question": "Is it a fastener (holds things together)?", "category": "object_type"},
     {"id": "provides_security", "question": "Does it provide security?", "category": "function"},
-    {"id": "measures_something", "question": "Does it measure something?", "category": "function"}
+    {"id": "measures_something", "question": "Does it measure something?", "category": "function"},
+
+    {"id": "is_fuzzy", "question": "Is it fuzzy or has a fuzzy texture?", "category": "texture"},
+    {"id": "walks_sideways", "question": "Does it walk sideways?", "category": "animal_ability"},
+    {"id": "is_wide", "question": "Is it wider than it is long?", "category": "shape"},
+    {"id": "has_long_legs", "question": "Does it have notably long legs?", "category": "animal_appearance"},
+    {"id": "has_long_tail", "question": "Does it have a notably long tail?", "category": "animal_appearance"},
+    {"id": "is_playful", "question": "Is it known for being playful?", "category": "animal_behavior"},
+    {"id": "is_plumbing", "question": "Is it a plumbing fixture?", "category": "object_type"},
+    {"id": "is_fixture", "question": "Is it a fixed installation (not movable)?", "category": "object_type"},
+    {"id": "is_spiky", "question": "Is it spiky or has spines?", "category": "texture"},
+    {"id": "is_independent", "question": "Is it known for being independent?", "category": "animal_behavior"}
   ]
 }
