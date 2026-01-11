@@ -4,7 +4,7 @@ Game Engine for the 20 Questions game.
 Orchestrates all components and manages the game flow.
 """
 
-from typing import Optional, List, Tuple, Callable
+from typing import Optional, List, Tuple, Callable, Dict
 from dataclasses import dataclass, field
 from enum import Enum
 
@@ -13,6 +13,7 @@ from .knowledge_base import KnowledgeBase
 from .belief_tracker import BeliefTracker
 from .question_selector import QuestionSelector
 from .weight_learner import WeightLearner
+from .implications import ImplicationEngine
 
 
 class GameState(Enum):
@@ -77,6 +78,7 @@ class GameEngine:
         self.bt = BeliefTracker(self.kb)
         self.qs = QuestionSelector(self.kb, self.bt)
         self.wl = WeightLearner(self.kb, learning_rate=self.config.learning_rate)
+        self.implication_engine = ImplicationEngine()
 
         # Game state
         self.state = GameState.NOT_STARTED
@@ -120,8 +122,15 @@ class GameEngine:
             self.state = GameState.MAKING_GUESS
             return None
 
-        # Select best question
-        attr_id = self.qs.select_best_question(self.beliefs, self.asked_questions)
+        # Build known answers dict for implication filtering
+        known_answers = self._get_known_answers()
+
+        # Select best question (with hierarchy and implication awareness)
+        attr_id = self.qs.select_best_question(
+            self.beliefs,
+            self.asked_questions,
+            known_answers
+        )
 
         if attr_id is None:
             # No more useful questions
@@ -130,6 +139,35 @@ class GameEngine:
 
         question_text = self.qs.get_question_text(attr_id)
         return (attr_id, question_text)
+
+    def _get_known_answers(self) -> Dict[str, float]:
+        """
+        Build a dictionary of known answers from the question history,
+        including answers that are logically implied by previous answers.
+
+        Returns:
+            Dict mapping attribute_id -> answer_value
+        """
+        # Start with directly answered questions
+        known = {attr_id: answer for attr_id, answer in self.question_answers}
+
+        # Propagate implications to build complete set of known answers
+        # We need to iterate until no new implications are found
+        # Limit iterations to prevent infinite loops from circular implications
+        max_iterations = 100
+        iteration = 0
+        changed = True
+        while changed and iteration < max_iterations:
+            changed = False
+            iteration += 1
+            for attr_id, answer in list(known.items()):
+                implications = self.implication_engine.get_implications(attr_id, answer)
+                for implied_attr, implied_val in implications:
+                    if implied_attr not in known:
+                        known[implied_attr] = implied_val
+                        changed = True
+
+        return known
 
     def process_answer(self, attribute_id: str, answer: float) -> TurnResult:
         """

@@ -45,35 +45,44 @@ class KnowledgeBase:
         """Load entities and attributes from JSON files."""
         # Load entities and cache original data
         if self.entities_file.exists():
-            with open(self.entities_file, "r") as f:
-                data = json.load(f)
-                for e in data.get("entities", []):
-                    self.entities[e["id"]] = Entity.from_dict(e)
-                    # Cache original attributes for comparison during save
-                    self._original_entities[e["id"]] = e.get("attributes", {})
+            try:
+                with open(self.entities_file, "r") as f:
+                    data = json.load(f)
+                    for e in data.get("entities", []):
+                        self.entities[e["id"]] = Entity.from_dict(e)
+                        # Cache original attributes for comparison during save
+                        self._original_entities[e["id"]] = e.get("attributes", {})
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Failed to load entities file: {e}")
 
         # Load attributes
         if self.attributes_file.exists():
-            with open(self.attributes_file, "r") as f:
-                data = json.load(f)
-                self.attributes = {
-                    a["id"]: Attribute.from_dict(a) for a in data.get("attributes", [])
-                }
+            try:
+                with open(self.attributes_file, "r") as f:
+                    data = json.load(f)
+                    self.attributes = {
+                        a["id"]: Attribute.from_dict(a) for a in data.get("attributes", [])
+                    }
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Failed to load attributes file: {e}")
 
         # Load learned data (overrides for entities/attributes from play sessions)
         if self.learned_file.exists():
-            with open(self.learned_file, "r") as f:
-                data = json.load(f)
-                # Merge learned entities
-                for e in data.get("entities", []):
-                    entity = Entity.from_dict(e)
-                    if entity.id in self.entities:
-                        # Update existing entity's learned attributes
-                        self.entities[entity.id].attributes.update(entity.attributes)
-                        self.entities[entity.id].times_played = entity.times_played
-                        self.entities[entity.id].times_guessed_correctly = entity.times_guessed_correctly
-                    else:
-                        self.entities[entity.id] = entity
+            try:
+                with open(self.learned_file, "r") as f:
+                    data = json.load(f)
+                    # Merge learned entities
+                    for e in data.get("entities", []):
+                        entity = Entity.from_dict(e)
+                        if entity.id in self.entities:
+                            # Update existing entity's learned attributes
+                            self.entities[entity.id].attributes.update(entity.attributes)
+                            self.entities[entity.id].times_played = entity.times_played
+                            self.entities[entity.id].times_guessed_correctly = entity.times_guessed_correctly
+                        else:
+                            self.entities[entity.id] = entity
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Failed to load learned file: {e}")
 
     def save(self) -> None:
         """Save learned data to JSON file."""
@@ -87,8 +96,17 @@ class KnowledgeBase:
 
         learned_data = {"entities": learned_entities}
 
-        with open(self.learned_file, "w") as f:
-            json.dump(learned_data, f, indent=2)
+        # Write to temp file first, then rename for atomic operation
+        temp_file = self.learned_file.with_suffix('.json.tmp')
+        try:
+            with open(temp_file, "w") as f:
+                json.dump(learned_data, f, indent=2)
+            # Atomic rename to prevent corruption on crash
+            temp_file.replace(self.learned_file)
+        except IOError as e:
+            print(f"Warning: Failed to save learned file: {e}")
+            if temp_file.exists():
+                temp_file.unlink()
 
     def _get_original_attribute(self, entity_id: str, attr_id: str) -> Optional[float]:
         """Get original attribute value from cached base data (for comparison)."""
